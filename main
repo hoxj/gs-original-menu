@@ -233,24 +233,5 @@ function Library:CreatePage(props)
     return Page
 end
 
-
-local Library = loadstring(game:HttpGet("YOUR_URL"))()
-
-local Window = Library:CreateWindow()
-local Visuals = Window:CreatePage({Icon = "rbxassetid://8547254518"})
-
-local ESP = Visuals:CreateSection({
-    Name = "Player ESP",
-    Size = 300,
-    Side = "Left"
-})
-
-ESP:CreateToggle({
-    Name = "Bounding Box",
-    State = true,
-    Callback = function(v)
-        print("Bounding Box:", v)
-    end
-})
-
 return Library
+
